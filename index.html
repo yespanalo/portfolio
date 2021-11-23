@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/main.css">
+   
+</head>
+<body>
+    <div class="nav">
+      
+    <a href="#"><img src="images/LOGO.png" alt="Logo" id="logo"></a>
+    <div class="links">
+      <ul>
+        <li>
+          <a href="#aboutme">ABOUT</a>
+        </li>
+        <li>
+          <a href="#educ">EDUCATION</a>
+        </li>
+        <li>
+          <a href="#hob">HOBBIES</a>
+        </li>
+        <li>
+          <a href="#proj">PROJECTS</a>
+        </li>
+        <li>
+          <a href="#question">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="object" data-value="3">Hi! I am Ivan.</h2>
+        <img src="images/task.png" class="object" data-value="-5" alt="">
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove" , parallax);
+      function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value)/200;
+          var y = (e.clientY * moving_value)/200;
+
+          move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        })
+      }
+    </script>
+
+    
+
+    <section class="quote">
+        <blockquote>"I CAN DO ALL THIS THROUGH <br> HIM WHO GIVES ME STRENGTH."<span id="line"></span> <span id="verse">Philippians 4:13</span> </blockquote>
+        <img src="images/polygon.png" id="upper_right_polygon" alt="">
+        <img src="images/polygon.png" id="lower_left_polygon" alt="">
+    </section>
+    <div class="spacer"></div>
+
+    <div class="about_me" id="aboutme">
+      <H2 id="About">ABOUT ME</H2>
+      <p class="par">At Polytechnic University of the Philippines, I am a third-year BSIT student. After graduation, I plan to work as a software engineer, which is my dream career.</p>
+      <p class="see_more"> <a href="aboutme.html">See More ></a> </p>
+    </div>
+    
+    <div id="space"></div>
+    
+
+    <div class="educational_background" id="educ">
+      <H2 id="education">EDUCATION</H2>
+      <a href="#"><img class="study" src="images/study.png" alt=""></a>
+    </div>
+    
+    <div id="space"></div>
+
+    <div class="hobbies" id="hob">
+      <h2 class="hobbies-title">LEARN ABOUT MY <br>MY HOBBIES </h2>
+      <img src="images/hobbies.png" class="hobbies-image" alt="">
+      <button id="hobbies-learn-more">Learn more</button>
+    </div>
+
+    <div id="space-hobbies"></div>
+
+    <div class="projects-section" id="proj">
+      <h2>< Projects ></h2>
+      <p>"Wanting to learn more about <br> Front-End Design"</p>
+      <h1> <a href="#">< See more ></See></a> </h1>
+      <img class="project-image" src="images/projects.png" alt="">
+    </div>
+
+    <div id="space-projects"></div>
+   
+    <div class="question-section" id="question">
+      <img src="images/question.png" alt="" class="question-image">
+      <h2 class="question-title">HAVE A QUESTION?<br>CONTACT ME </h2>
+      <button id="question-learn-more">Contact me</button>
+    </div>
+
+    
+    <div id="space-question"></div>
+
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js'></script>
+    <script src="./script.js"></script>
+    
+</body>
+</html>

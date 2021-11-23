@@ -1,0 +1,343 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0C0C0C;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 500px;
+  overflow-x: hidden;
+}
+
+body .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
+body .nav #logo {
+  height: 40px;
+  margin-left: 20px;
+}
+
+body .nav a {
+  font-size: 15px;
+  color: #FFF01F;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+body .nav a:hover {
+  color: white;
+}
+
+body .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 50px;
+}
+
+body .nav ul li {
+  margin-left: 50px;
+}
+
+body .container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+body .container img {
+  position: absolute;
+  width: 40%;
+  top: 35px;
+  right: 200px;
+}
+
+body .container h2 {
+  z-index: 999;
+  position: absolute;
+  left: 200px;
+  top: 350px;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+body .quote {
+  position: relative;
+}
+
+body .quote blockquote {
+  position: absolute;
+  top: 300px;
+  right: 25%;
+  font-size: 50px;
+  text-align: center;
+  width: 50%;
+  font-weight: bold;
+}
+
+body .quote blockquote #line {
+  width: 100%;
+  background: #FFF01F;
+  display: block;
+  height: 5px;
+  margin-top: 10px;
+}
+
+body .quote blockquote #verse {
+  font-size: 10px;
+}
+
+body .quote #upper_right_polygon {
+  opacity: 0.3;
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  width: 10%;
+}
+
+body .quote #lower_left_polygon {
+  opacity: 0.3;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 500px;
+  left: 120px;
+  width: 10%;
+}
+
+body .spacer {
+  height: 800px;
+}
+
+body .about_me {
+  margin: 0px;
+  padding: 0;
+  position: relative;
+}
+
+body .about_me H2 {
+  position: absolute;
+  font-size: 200px;
+  font-weight: bold;
+  top: 160px;
+  right: 250px;
+  color: rgba(255, 255, 0, 0.178);
+}
+
+body .about_me .par {
+  top: 260px;
+  right: 160px;
+  position: absolute;
+  z-index: 99999;
+  width: 900px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+body .about_me .see_more {
+  font-size: 20px;
+  top: 430px;
+  right: 957px;
+  position: absolute;
+}
+
+body .about_me .see_more a {
+  color: #FFF01F;
+  text-decoration: none;
+}
+
+body .about_me .see_more a:hover {
+  color: #8a8a8a;
+}
+
+body #space {
+  height: 700px;
+}
+
+body .educational_background {
+  margin: 0px;
+  padding: 0;
+  position: relative;
+}
+
+body .educational_background H2 {
+  position: absolute;
+  font-size: 200px;
+  font-weight: bold;
+  top: 100px;
+  left: 150px;
+  color: rgba(255, 255, 0, 0.178);
+}
+
+body .educational_background img {
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  width: 30%;
+}
+
+body .hobbies {
+  position: relative;
+}
+
+body .hobbies img {
+  position: absolute;
+  width: 700px;
+  right: 100px;
+  top: 90px;
+}
+
+body .hobbies .hobbies-title {
+  font-size: 65px;
+  font-weight: 600;
+  position: absolute;
+  left: 100px;
+  top: 270px;
+}
+
+body .hobbies button {
+  position: absolute;
+  font-size: 16px;
+  top: 450px;
+  left: 100px;
+  color: black;
+  font-weight: bold;
+  background-color: #fff01fea;
+  width: 150px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+body .hobbies button:hover {
+  background-color: #FFF01F;
+}
+
+body #space-hobbies {
+  height: 650px;
+}
+
+body .projects-section {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body .projects-section img {
+  position: absolute;
+  width: 50%;
+  top: 60px;
+  left: 50px;
+}
+
+body .projects-section h2 {
+  color: #FFF01F;
+  position: absolute;
+  right: 540px;
+  top: 210px;
+  font-size: 40px;
+}
+
+body .projects-section p {
+  position: absolute;
+  right: 200px;
+  top: 310px;
+  font-size: 40px;
+  font-style: italic;
+}
+
+body .projects-section h1 {
+  position: absolute;
+  right: 510px;
+  top: 440px;
+  font-size: 40px;
+}
+
+body .projects-section h1 a {
+  text-decoration: none;
+  color: #FFF01F;
+}
+
+body #space-projects {
+  height: 720px;
+}
+
+body .question-section {
+  position: relative;
+}
+
+body .question-section img {
+  width: 50%;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+body .question-section .question-title {
+  font-size: 65px;
+  font-weight: 600;
+  position: absolute;
+  left: 100px;
+  top: 220px;
+}
+
+body .question-section button {
+  position: absolute;
+  font-size: 16px;
+  top: 400px;
+  left: 100px;
+  color: black;
+  font-weight: bold;
+  background-color: #fff01fea;
+  width: 180px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+body .question-section button:hover {
+  background-color: #FFF01F;
+}
+
+body #space-question {
+  height: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px black;
+          box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFF01F;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */
